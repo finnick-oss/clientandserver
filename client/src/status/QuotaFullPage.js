@@ -34,7 +34,7 @@ const QuotaFullPage = ({ location }) => {
       setData(prevData => [...prevData, newData]);
 
       // Send data to backend
-      fetch('http://localhost:8083/survey', {
+      fetch('https://backend-sql-yik6.onrender.com/survey', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
