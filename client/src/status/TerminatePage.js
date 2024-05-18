@@ -76,9 +76,9 @@ const TerminatePage = ({ location }) => {
                   <td>{index + 1}</td>
                   <td>{survey.pid}</td>
                   <td>{survey.uid}</td>
-                  <td>{survey.status}</td>
                   <td>{survey.ip}</td>
                   <td>{survey.completionTime}</td>
+                  <td>{survey.status}</td>
                 </tr>
               ))}
             </tbody>

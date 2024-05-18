@@ -61,7 +61,7 @@ const CompletedPage = ({ location }) => {
         <div className="table-responsive">
           <table className="table table-bordered table-hover table-sm text-center">
             <thead>
-              <tr>
+            <tr>
                 <th scope="col">Serial NO.</th>
                 <th scope="col">Project ID</th>
                 <th scope="col">User ID</th>
@@ -76,9 +76,9 @@ const CompletedPage = ({ location }) => {
                   <td>{index + 1}</td>
                   <td>{survey.pid}</td>
                   <td>{survey.uid}</td>
-                  <td>{survey.status}</td>
                   <td>{survey.ip}</td>
                   <td>{survey.completionTime}</td>
+                  <td>{survey.status}</td>
                 </tr>
               ))}
             </tbody>
