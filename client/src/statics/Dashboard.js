@@ -8,7 +8,7 @@ const Dashboard = () => {
   
   useEffect(() => {
  
-      fetch('http://localhost:8083/survey')
+      fetch('https://backend-sql-yik6.onrender.com/survey')
       .then(response => response.json())
       .then(data => {
         // Update state with fetched data
