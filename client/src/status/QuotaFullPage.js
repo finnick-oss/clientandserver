@@ -78,7 +78,7 @@ const QuotaFullPage = ({ location }) => {
                   <td>{survey.uid}</td>
                   <td>{survey.ip}</td>
                   <td>{survey.completionTime}</td>
-                  <td>{survey.status}</td>
+                  <td className={`status ${item.status.toLowerCase()}`}>{survey.status}</td>
                 </tr>
               ))}
             </tbody>
