@@ -78,7 +78,7 @@ const CompletedPage = ({ location }) => {
                   <td>{survey.uid}</td>
                   <td>{survey.ip}</td>
                   <td>{survey.completionTime}</td>
-                  <td className={'status ${survey.status.toLowerCase()}'}>{survey.status}</td>
+                  <td className={`status ${survey.status.toLowerCase()}`}>{survey.status}</td>
                 </tr>
               ))}
             </tbody>
