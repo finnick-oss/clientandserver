@@ -1,9 +1,13 @@
 .footer {
+
   position: relative;
+  /* bottom: 0px; */
   background-color: hsl(211, 29%, 17%);
   color: white;
   padding: 15px 20px; /* Increased padding for better spacing */
   text-align: center;
+  margin-top: auto;
+  
 }
 
 .footer-content {

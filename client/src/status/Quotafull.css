@@ -1,37 +1,81 @@
-/* Quotafull.css */
+/* Complete.css */
 
-.quota-full-page {
-    margin: 50px;
-  }
+.complete-page{
+  width: 100%;
+  padding: 40px;
+}
   
-  .quota-full-title {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
-  
-  .quota-full-table-container {
-    overflow-x: auto;
-  }
-  
-  .quota-full-table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  
-  .quota-full-table th,
-  .quota-full-table td {
-    padding: 8px;
-    text-align: center;
-    border: 1px solid #dee2e6;
-  }
-  
-  .quota-full-table th {
-    background-color: #007bff;
-    color: #fff;
-  }
-  
-  .quota-full-table tbody tr:nth-child(even) {
-    background-color: #f2f2f2;
-  }
-  
+.table-container {
+  margin: 20px auto;
+  /* margin: auto; */
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+
+.table-responsive {
+  overflow-x: auto;
+  border-radius: 8px;
+}
+
+.table {
+  width: 100%;
+  margin-bottom: 1rem;
+  background-color: #ffffff;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  padding: 1rem;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.table thead th {
+  background-color: #f8f9fa;
+  color: #333333;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.table tbody tr:hover {
+  background-color: #f1f3f5;
+}
+
+.table th:first-child,
+.table td:first-child {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.table th:last-child,
+.table td:last-child {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.status {
+  display: inline-block;
+  padding: 0.25em 0.5em;
+  border-radius: 0.25rem;
+  font-size: 0.875em;
+  font-weight: 700;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+}
+
+.status.completed {
+  color: #28a745;
+}
+
+.status.terminate {
+  color: #dc3545;
+}
+
+.status.quotafull {
+  color: #ffc107;
+}
+

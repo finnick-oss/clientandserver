@@ -41,47 +41,49 @@ const CompletedPage = ({ location }) => {
         },
         body: JSON.stringify(newData)
       })
-      .then(response => {
-        if (response.ok) {
-          console.log('Data saved successfully');
-        } else {
-          console.error('Failed to save data');
-        }
-      })
-      .catch(error => {
-        console.error('Error saving data:', error);
-      });
+        .then(response => {
+          if (response.ok) {
+            console.log('Data saved successfully');
+          } else {
+            console.error('Failed to save data');
+          }
+        })
+        .catch(error => {
+          console.error('Error saving data:', error);
+        });
     }
   }, [location.search, ipAddress]);
 
   return (
     <div className="complete-page">
       <h1 className="complete-title">Completed Surveys</h1>
-      <div className="complete-table-container">
-        <table className="complete-table">
-          <thead>
-            <tr>
-              <th>Serial NO.</th>
-              <th>Project ID</th>
-              <th>User ID</th>
-              <th>Status</th>
-              <th>IP Address</th>
-              <th>Completion Time</th>
-            </tr>
-          </thead>
-          <tbody>
-            {data.map((survey, index) => (
-              <tr key={index}>
-                <td>{index + 1}</td>
-                <td>{survey.pid}</td>
-                <td>{survey.uid}</td>
-                <td>{survey.status}</td>
-                <td>{survey.ip}</td>
-                <td>{survey.completionTime}</td>
+      <div className="table-container">
+        <div className="table-responsive">
+          <table className="table table-bordered table-hover table-sm text-center">
+            <thead>
+              <tr>
+                <th scope="col">Serial NO.</th>
+                <th scope="col">Project ID</th>
+                <th scope="col">User ID</th>
+                <th scope="col">IP Address</th>
+                <th scope="col">Completion Time</th>
+                <th scope="col">Status</th>
               </tr>
-            ))}
-          </tbody>
-        </table>
+            </thead>
+            <tbody id="table-body">
+              {data.map((survey, index) => (
+                <tr key={index}>
+                  <td>{index + 1}</td>
+                  <td>{survey.pid}</td>
+                  <td>{survey.uid}</td>
+                  <td>{survey.status}</td>
+                  <td>{survey.ip}</td>
+                  <td>{survey.completionTime}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
   );
