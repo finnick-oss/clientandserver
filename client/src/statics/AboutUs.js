@@ -6,7 +6,7 @@ const AboutUs = () => {
     <div className="about-us-container">
       <h1 className="about-us-title">About Us</h1>
       <p className="about-us-text">
-        At [Your Company Name], we are a dedicated team of professionals specializing in digital market research. With a passion for understanding consumer behavior and market trends, we strive to provide valuable insights to businesses across various industries.
+        At VisionVow, we are a dedicated team of professionals specializing in digital market research. With a passion for understanding consumer behavior and market trends, we strive to provide valuable insights to businesses across various industries.
       </p>
       <p className="about-us-text">
         Our mission is to empower businesses with actionable data-driven strategies that drive growth and success in the digital landscape. Through meticulous research methodologies and cutting-edge analytics tools, we uncover valuable insights that help our clients make informed decisions.
