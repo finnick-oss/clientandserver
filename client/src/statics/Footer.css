@@ -2,7 +2,7 @@
   position: relative;
   background-color: hsl(211, 29%, 17%);
   color: white;
-  padding: 25px 20px; /* Increased padding for better spacing */
+  padding: 15px 20px; /* Increased padding for better spacing */
   text-align: center;
 }
 
@@ -14,7 +14,6 @@
 
 .contact-us-title {
   font-size: 24px;
-  margin-bottom: 20px; /* Increased margin for better separation */
 }
 
 .contact-info {
